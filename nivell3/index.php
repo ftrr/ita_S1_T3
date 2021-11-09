@@ -28,4 +28,12 @@ $array = [0,0,0,1,1,1,1,3,3,3,2,2,2,2,2];
  }
 
 
- echo valueInArray($array, 2);
+ echo valueInArray($array, 2). "<br><br>";
+
+
+ //Exercici 3
+
+ $x = array(10,20,30,40,50);
+ array_splice($x,1,1);
+ print_r($x);
+
