@@ -10,7 +10,22 @@
 
  }
 
- echo stringToArray("Benvinguts al Cibernarium");
+ echo stringToArray("Benvinguts al Cibernarium"). "<br><br>";
 
 
- 
+ //Exercici 2
+
+$array = [0,0,0,1,1,1,1,3,3,3,2,2,2,2,2];
+
+ function valueInArray($a, $valor){
+    $i = 0;
+    foreach($a as $value){
+        if($value === $valor){         
+            $i++;      
+        }       
+    }
+    return $i;
+ }
+
+
+ echo valueInArray($array, 2);
